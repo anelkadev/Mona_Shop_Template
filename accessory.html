@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phụ kiện - dogcatshop - Demo</title>
+    <link rel="stylesheet" href="assets/css/accessory.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      .header .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        background: #333333;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        top: 0;
+      }
+      .header .nav-menu .logo img {
+        padding-top: 10px;
+        width: 140px;
+        height: 60px;
+        cursor: pointer;
+      }
+
+      .header .nav-menu .menu ul {
+        display: flex;
+      }
+      .header .nav-menu .menu ul li {
+        list-style-type: none;
+        padding: 30px 20px;
+      }
+      .header .nav-menu .menu ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+      }
+      .header .nav-menu .menu ul li:hover {
+        background: #30b5b2;
+      }
+      .header .nav-menu .menu-1 ul {
+        display: flex;
+        padding-top: 20px;
+      }
+      .header .nav-menu .menu-1 ul li {
+        list-style-type: none;
+        padding: 10px 20px;
+      }
+      .header .nav-menu .menu-1 ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+      }
+      .menu-1 .menu-11 ul {
+        background: #efefed;
+        max-width: 500px;
+        min-height: 100px;
+        border-radius: 5px;
+      }
+      .menu-1 .menu-11 li {
+        position: relative;
+      }
+      .menu-1 .menu-11 li:hover > .search {
+        display: block;
+      }
+      .menu-1 .menu-11 li .search {
+        display: none;
+        position: absolute;
+        right: 30%;
+      }
+      .search li {
+        display: flex;
+      }
+      .search li input[type="search"] {
+        height: 40px;
+        width: 200px;
+        background: transparent;
+        border: 1px solid #30b5b2;
+        color: #333;
+        padding: 10px;
+        outline: none;
+        border-right: none;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+      .search li input[type="submit"] {
+        height: 40px;
+        width: 70px;
+        margin-left: -5px;
+        background-color: #30b5b2;
+        color: aliceblue;
+        border: 1px solid #30b5b2;
+        border-left: none;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      .intro {
+        height: 150px;
+        background: #30b5b2;
+      }
+      .intro ul {
+        display: flex;
+        justify-content: space-around;
+      }
+      .intro ul li {
+        list-style-type: none;
+        font-size: 20px;
+        margin-top: 20px;
+        text-align: center;
+      }
+      .intro ul li .fa {
+        font-size: 40px;
+      }
+      .intro ul li span {
+        font-size: 14px;
+      }
+
+      .header_color {
+        background: #30b5b2;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <!-- <div id="header">
+        <div id="header_logo_mona">
+          <a href="index.html">
+            <img src="/assets/img/header/header1.png" alt="" />
+          </a>
+        </div>
+        <div id="header_title">
+          <ul>
+            <li><a href="index.html">Giới thiệu</a></li>
+            <li><a href="#">Chó cảnh</a></li>
+            <li><a href="#">Mèo cảnh</a></li>
+            <li><a href="food.html">Đồ ăn</a></li>
+            <li><a href="accessory.html">Phụ kiện</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div id="header_icon">
+          <a href="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <a href="account.html">
+            <i class="fa-solid fa-user"></i>
+          </a>
+          <a href="carts.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+        </div>
+      </div> -->
+      <div class="header header-h">
+        <div class="nav-menu">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="" /></a>
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="Gioithieu.html">GIỚI THIỆU</a></li>
+              <li><a href="Chocanh.html">CHÓ CẢNH</a></li>
+              <li><a href="Meocanh.html">MÈO CẢNH</a></li>
+              <li><a href="food.html">ĐỒ ĂN</a></li>
+              <li class="header_color">
+                <a href="accessory.html">PHỤ KIỆN</a>
+              </li>
+              <li><a href="contact.html">LIÊN HỆ</a></li>
+            </ul>
+          </div>
+          <div class="menu-1">
+            <ul class="menu-11">
+              <li>
+                <a href="#"><i class="fa fa-search"></i></a>
+                <ul class="search">
+                  <li>
+                    <input
+                      type="search"
+                      name="txtsearch"
+                      placeholder="Search..."
+                    />
+                    <input type="submit" name="btm" value="Search" />
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="account.html"><i class="fa fa-user-circle-o"></i></a>
+              </li>
+              <li>
+                <a href="carts.html"><i class="fa fa-shopping-cart"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="slider">
+        <div id="slider_home">
+          <p>TRANG CHỦ /</p>
+          <h4>PHỤ KIỆN</h4>
+        </div>
+        <div id="slider_content">
+          <p>Xem tất cả 9 kết quả</p>
+          <select name="" value="Thứ tự mặc định" id="select_slider_content">
+            <option value="">Thứ tự mặc định</option>
+            <option value="">Thứ tự theo mức phổ biến</option>
+            <option value="">Thứ tự theo điểm đánh giá</option>
+            <option value="">Thứ tự theo sản phẩm mới</option>
+            <option value="">Thứ tự theo giá : thấp đến cao</option>
+            <option value="">Thứ tự theo giá : cao đến thấp</option>
+          </select>
+        </div>
+        <div id="slider_empty"></div>
+      </div>
+      <div id="content">
+        <div id="content_left">
+          <h4 class="solid_content">Danh mục sản phẩm</h4>
+          <div class="product_content">
+            <p class="dog_product_content">Chó cảnh</p>
+            <p class="cat_product_content">Mèo cảnh</p>
+          </div>
+          <h4 class="solid_content2">Lọc theo giá</h4>
+          <div class="filter_content">
+            <input
+              class="range_filter_content"
+              type="range"
+              min="25000"
+              max="690000"
+            />
+            <button class="button_filter_content">Lọc</button>
+            <p>Giá:</p>
+          </div>
+          <h4 class="solid_content2">Sản phẩm</h4>
+          <div class="list_products_content">
+            <div class="general_list">
+              <div class="list_product_left">
+                <img
+                  class="img_list_product_left"
+                  src="/assets/img/list_product_left/list6.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="nametext_list_product_left">
+                <p>Chó boston Terrier thuần chủng</p>
+                <h5>10,650,000 đ</h5>
+              </div>
+            </div>
+            <div class="general_list">
+              <div class="list_product_left">
+                <img
+                  class="img_list_product_left"
+                  src="/assets/img/list_product_left/list7.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="nametext_list_product_left">
+                <p>Royal Canin BabyCat 34</p>
+                <h5>690,000 đ</h5>
+              </div>
+            </div>
+            <div class="general_list">
+              <div class="list_product_left">
+                <img
+                  class="img_list_product_left"
+                  src="/assets/img/list_product_left/list8.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="nametext_list_product_left">
+                <p>Mèo Nga mắt xanh - Russian Blue</p>
+                <h5>6,897,000 đ</h5>
+              </div>
+            </div>
+            <div class="general_list">
+              <div class="list_product_left">
+                <img
+                  class="img_list_product_left"
+                  src="/assets/img/list_product_left/list9.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="nametext_list_product_left">
+                <p>Pate Monge gà 100g</p>
+                <h5>45,000 đ</h5>
+              </div>
+            </div>
+            <div class="general_list">
+              <div class="list_product_left">
+                <img
+                  class="img_list_product_left"
+                  src="/assets/img/list_product_left/list10.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="nametext_list_product_left">
+                <p>Vòng cổ Ferplast Ergoflex 1.5/21-25cm</p>
+                <h5>321,000 đ</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="content_between">
+          <div class="product_content_between">
+            <!-- Chia bô cục -->
+            <div class="list_products_content_between_top">
+              <div class="together_list">
+                <div class="logo_list_products_content_bw">
+                  <img
+                    src="/assets/img/list_product_between/list10.jpg"
+                    alt=""
+                  />
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <div class="nametext_products_content_between">
+                  <p class="food_dog">Phụ kiện</p>
+                  <a>Dây dắt Ferplast Ergoflu0</a>
+                  <h5>575,000 đ</h5>
+                </div>
+              </div>
+              <div class="together_list">
+                <div class="logo_list_products_content_bw">
+                  <img
+                    src="/assets/img/list_product_between/list11.jpg"
+                    alt=""
+                  />
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <div class="nametext_products_content_between">
+                  <p class="food_dog">Phụ kiện</p>
+                  <a>Dây dắt tự động Flexi New Comfort</a>
+                  <h5>452,000 đ</h5>
+                </div>
+              </div>
+              <div class="together_list">
+                <div class="logo_list_products_content_bw">
+                  <img
+                    src="/assets/img/list_product_between/list12.jpg"
+                    alt=""
+                  />
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <div class="nametext_products_content_between">
+                  <p class="food_dog">Phụ kiện</p>
+                  <a>Lồng vận chuyển Ferplast Atlas</a>
+                  <h5>2,458,000 đ</h5>
+                </div>
+              </div>
+            </div>
+            <div class="list_products_content_between_bet">
+              <div class="together_list">
+                <div class="logo_list_products_content_bw">
+                  <img
+                    src="/assets/img/list_product_between/list13.jpg"
+                    alt=""
+                  />
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <div class="nametext_products_content_between">
+                  <p class="food_dog">Phụ kiện</p>
+                  <a>Túi Nylon Trung ( Ngựa vằn)</a>
+                  <h5>452,000 đ</h5>
+                </div>
+              </div>
+              <div class="together_list">
+                <div class="logo_list_products_content_bw">
+                  <img
+                    src="/assets/img/list_product_between/list14.jpg"
+                    alt=""
+                  />
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <div class="nametext_products_content_between">
+                  <p class="food_dog">Phụ kiện</p>
+                  <a>Túi xách Pawise Voyage Travel</a>
+                  <h5>542,000 đ</h5>
+                </div>
+              </div>
+              <div class="together_list">
+                <div class="logo_list_products_content_bw">
+                  <img
+                    src="/assets/img/list_product_between/list15.jpg"
+                    alt=""
+                  />
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <div class="nametext_products_content_between">
+                  <p class="food_dog">Phụ kiện</p>
+                  <a>Vòng cổ da Ferplast Natural</a>
+                  <h5>458,000 đ</h5>
+                </div>
+              </div>
+            </div>
+            <div class="list_products_content_between_bot">
+              <div class="together_list">
+                <div class="logo_list_products_content_bw">
+                  <img
+                    src="/assets/img/list_product_between/list16.jpg"
+                    alt=""
+                  />
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <div class="nametext_products_content_between">
+                  <p class="food_dog">Phụ kiện</p>
+                  <a>Vòng cổ da Ferplast Natural 2.5</a>
+                  <h5>362,000 đ</h5>
+                </div>
+              </div>
+              <div class="together_list">
+                <div class="logo_list_products_content_bw">
+                  <img
+                    src="/assets/img/list_product_between/list17.jpg"
+                    alt=""
+                  />
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <div class="nametext_products_content_between">
+                  <p class="food_dog">Phụ kiện</p>
+                  <a>vòng cổ Ferplast Ergoflex 1.5</a>
+                  <h5>321,000 đ</h5>
+                </div>
+              </div>
+              <div class="together_list">
+                <div class="logo_list_products_content_bw">
+                  <img
+                    src="/assets/img/list_product_between/list18.jpg"
+                    alt=""
+                  />
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <div class="nametext_products_content_between">
+                  <p class="food_dog">Phụ kiện</p>
+                  <a>Yếm Ferplast Ergofluo 2.5</a>
+                  <h5>685,000 đ</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product_content_between_number">
+            <div class="button_content_between_number"></div>
+          </div>
+        </div>
+        <div id="content_right"></div>
+      </div>
+      <div id="footer">
+        <div class="footer-l">
+          <h2>ĐIỀU HƯỚNG</h2>
+          <ul>
+            <li><a href="">Trang chủ</a></li>
+            <li><a href="">Về chúng tôi</a></li>
+            <li><a href="">Sản phẩm</a></li>
+            <li><a href="">Điểm tin hữu ích</a></li>
+            <li><a href="">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div class="footer-b">
+          <div class="logo-1">
+            <img src="/assets/img/header/header1.png" alt="" />
+          </div>
+          <input type="email" name="" id="" placeholder="Email" />
+          <input type="submit" value="Gửi" />
+        </div>
+        <div class="footer-r">
+          <h2>Thông tin lên hệ</h2>
+          <ul>
+            <li>
+              <a href=""
+                ><i class="fa icon fa-map-marker"></i> Đại học Phương Đông<br />
+                số 4 Ngõ Chùa Hưng Ký – Minh Khai <br />
+                Hai Bà Trưng – Hà Nội</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><i class="fa icon fa-volume-control-phone"></i>0243 6241394
+                hoặc 093.6738889</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><i class="fa icon fa-envelope-o"></i
+                >ict.dhphuongdong@gmail.com</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><i class="fa icon fa-facebook-square"></i
+                >facebook.com/cntt.phuongdong</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><i class="fa icon fa-globe"></i>cntt.phuongdong.edu.vn/
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

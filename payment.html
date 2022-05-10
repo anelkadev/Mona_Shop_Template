@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+    <style>
+      .main-1 {
+        display: flex;
+        margin-top: 130px;
+        padding: 20px;
+      }
+      .tt {
+        margin-bottom: 20px;
+      }
+      .infomation {
+        width: 60%;
+        font-size: 16px;
+        font-weight: bold;
+        padding-left: 20px;
+      }
+      .infomation .name-1 {
+        display: flex;
+      }
+      .infomation .name input[type="text"] {
+        width: 300px;
+        height: 40px;
+        border: 1px solid #555;
+        outline: none;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+      .infomation .name .first {
+        margin-right: 30px;
+      }
+      .infomation .address input[type="text"] {
+        width: 630px;
+        height: 40px;
+        border: 1px solid #555;
+        outline: none;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+      ::placeholder {
+        font-size: 16px;
+      }
+      textarea {
+        outline: none;
+      }
+
+      .info-cart {
+        width: 40%;
+      }
+      .main-1 .total {
+        border: 1px solid #30b5b2;
+        padding-right: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .main-1 .total p {
+        font-size: 23px;
+        text-align: center;
+        font-weight: bold;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="nav-menu">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="" /></a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="Gioithieu.html">GIỚI THIỆU</a></li>
+            <li><a href="Chocanh.html">CHÓ CẢNH</a></li>
+            <li><a href="Meocanh.html">MÈO CẢNH</a></li>
+            <li><a href="food.html">ĐỒ ĂN</a></li>
+            <li><a href="accessory.html">PHỤ KIỆN</a></li>
+            <li><a href="contact.html">LIÊN HỆ</a></li>
+          </ul>
+        </div>
+        <div class="menu-1">
+          <ul class="menu-11">
+            <li>
+              <a href="#"><i class="fa fa-search"></i></a>
+              <ul class="search">
+                <li>
+                  <input
+                    type="search"
+                    name="txtsearch"
+                    placeholder="Search..."
+                  />
+                  <input type="submit" name="btm" value="Search" />
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="account.html"><i class="fa fa-user-circle-o"></i></a>
+            </li>
+            <li>
+              <a href="carts.html"><i class="fa fa-shopping-cart"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------body--------------------------------- -->
+    <div class="main-1">
+      <div class="infomation">
+        <h2 class="tt">THÔNG TIN THANH TOÁN</h2>
+        <div class="name-1 name">
+          <div class="first">
+            Họ * <br />
+            <input type="text" name="" id="" />
+          </div>
+          <div class="last">
+            Tên * <br />
+            <input type="text" name="" id="" />
+          </div>
+        </div>
+        <div class="name">
+          Địa chỉ * <br />
+          <input type="text" name="" id="" />
+        </div>
+        <div class="address">
+          Mã bưu điện <br />
+          <input type="text" name="" id="" />
+        </div>
+        <div class="address">
+          Tỉnh /Thành phố * <br /><input type="text" name="" id="" />
+        </div>
+        <div class="address">
+          Số điện thoại *<br /><input type="text" name="" id="" />
+        </div>
+        <div class="address">
+          Địa chỉ Email *<br /><input type="text" name="" id="" />
+        </div>
+        <div class="node">
+          Ghi chú đơn hàng <br /><textarea
+            name=""
+            id=""
+            cols="83"
+            rows="7"
+          ></textarea>
+        </div>
+      </div>
+      <div class="info-cart">
+        <div class="total">
+          <form action="">
+            <p>ĐƠN HÀNG CỦA BẠN</p>
+            <table>
+              <tr class="cap">
+                <th>Sản phẩm</th>
+                <th></th>
+                <th>Tổng cộng</th>
+              </tr>
+              <tr>
+                <td colspan="2">Mèo Anh nông ngắn Tabby x1</td>
+                <td colspan="2">500000</td>
+              </tr>
+              <tr>
+                <td colspan="2">Tổng cộng</td>
+                <td colspan="2">500000</td>
+              </tr>
+              <tr>
+                <td colspan="2">Giao hàng 1</td>
+                <td colspan="2">Giao hàng miễn phí</td>
+              </tr>
+              <tr>
+                <td colspan="2">Mã vận đơn</td>
+                <td colspan="2">W209658</td>
+              </tr>
+              <tr>
+                <td colspan="4"><input type="submit" value="Đặt hàng" /></td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------footer--------------------------------- -->
+    <div class="footer">
+      <div class="footer-l">
+        <h2>ĐIỀU HƯỚNG</h2>
+        <ul>
+          <li><a href="">Trang chủ</a></li>
+          <li><a href="">Về chúng tôi</a></li>
+          <li><a href="">Sản phẩm</a></li>
+          <li><a href="">Điểm tin hữu ích</a></li>
+          <li><a href="">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="footer-b">
+        <div class="logo-1">
+          <img src="images/logo.png" alt="" />
+        </div>
+        <input type="email" name="" id="" placeholder="Email" />
+        <input type="submit" value="Gửi" />
+      </div>
+      <div class="footer-r">
+        <h2>Thông tin lên hệ</h2>
+        <ul>
+          <li>
+            <a href=""
+              ><i class="fa icon fa-map-marker"></i> Đại học Phương Đông<br />
+              số 4 Ngõ Chùa Hưng Ký – Minh Khai <br />
+              Hai Bà Trưng – Hà Nội</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa icon fa-volume-control-phone"></i>0243 6241394 hoặc
+              093.6738889</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa icon fa-envelope-o"></i
+              >ict.dhphuongdong@gmail.com</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa icon fa-facebook-square"></i
+              >facebook.com/cntt.phuongdong</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa icon fa-globe"></i>cntt.phuongdong.edu.vn/
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
